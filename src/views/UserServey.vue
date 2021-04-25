@@ -18,6 +18,7 @@
                     v-model="user.account"
                     autocomplete="off"
                     size="small"
+                    class="account"
                 ></el-input>
             </el-form-item>
             <el-form-item label="姓名：" prop="name">
@@ -26,6 +27,7 @@
                     v-model="user.name"
                     autocomplete="off"
                     size="small"
+                    class="name"
                 ></el-input>
             </el-form-item>
             <el-form-item label="密码：" prop="pass">
@@ -34,6 +36,7 @@
                     v-model="user.pass"
                     autocomplete="off"
                     size="small"
+                    class="pass"
                 ></el-input>
             </el-form-item>
             <el-form-item label="确认密码：" prop="checkPass">
@@ -42,6 +45,7 @@
                     v-model="user.checkPass"
                     autocomplete="off"
                     size="small"
+                    class="checkPass"
                 ></el-input>
             </el-form-item>
             <el-form-item label="查询密码问题：">
@@ -60,6 +64,7 @@
                     v-model="user.passAnswer"
                     autocomplete="off"
                     size="small"
+                    class="passAnswer"
                 ></el-input>
             </el-form-item>
             <el-form-item label="出生日期：" prop="birthday">
