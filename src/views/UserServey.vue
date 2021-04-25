@@ -150,7 +150,6 @@ export default defineComponent({
         })
 
         const ruleForm = ref()
-        console.log(ruleForm)
 
         const onSubmit = (): void => {
             if (!ruleForm.value) return

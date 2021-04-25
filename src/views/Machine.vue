@@ -13,6 +13,7 @@
                 <el-input
                     type="text"
                     v-model="money"
+                    class="money"
                     autocomplete="off"
                     size="small"
                     :style="{ width: '100px' }"
@@ -20,8 +21,8 @@
                 ></el-input>
             </el-form-item>
             <el-form-item>
-                <el-button type="primary" size="small" @click="purchaseBeer">啤酒</el-button>
-                <el-button type="success" size="small" @click="purchaseJuice">橙汁</el-button>
+                <el-button type="primary" size="small" @click="purchaseBeer" class="btn1">啤酒</el-button>
+                <el-button type="success" size="small" @click="purchaseJuice" class="btn2">橙汁</el-button>
             </el-form-item>
             <el-form-item
                 label="找回金额："
@@ -35,12 +36,13 @@
                     size="small"
                     :style="{ width: '100px' }"
                     :disabled="true"
+                    class="changes"
                 ></el-input>
             </el-form-item>
             <div class="back">机器零钱是否找完：<div class="light" :style="{ 'background': lightColor }"></div></div>
             <hr>
-            <el-tag type="primary">送出啤酒数量：{{ beerNum }}</el-tag>
-            <el-tag type="success">送出橙汁数量：{{ juiceNum }}</el-tag>
+            <el-tag type="primary" class="tag1">送出啤酒数量：{{ beerNum }}</el-tag>
+            <el-tag type="success" class="tag2">送出橙汁数量：{{ juiceNum }}</el-tag>
         </el-form>
     </div>
 </template>
